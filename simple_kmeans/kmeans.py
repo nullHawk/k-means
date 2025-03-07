@@ -1,13 +1,13 @@
 import numpy as np
 
-class Kmeans:
+class KMeans:
     def __init__(self, k: int = 3, max_iters: int = 100, tol:float = 1e-4):
         self.k = k
         self.max_iters = max_iters
         self.tol = tol
         self.centroids = None
     
-    def _computer_distance(self, X, centroids):
+    def _compute_distance(self, X, centroids):
         """
         Computes distance between each data point and the centroids using
         the appropriate metric based on dimensionality.
