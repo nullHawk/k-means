@@ -23,6 +23,10 @@ You can install this package by cloning the repository and using `pip`:
 ```sh
 pip install .
 ```
+Or you can install it from pypi
+```
+pip install simple-kmeans
+```
 
 
 ## Usage
