@@ -4,7 +4,7 @@ This repository contains an implementation of the K-Means clustering algorithm f
 
 - **1D Data** → Uses **Manhattan Distance** (L1 norm)
 - **2D Data** → Uses **Euclidean Distance** (L2 norm)
-- **3D and above** → Uses **Minkowski Distance** with p = 3
+- **3D and above** → Cosine Distance
 
 
 ## Example Output

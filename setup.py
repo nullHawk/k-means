@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="simple_kmeans",
-    version="0.0.1",
+    version="0.1.1",
     author="Suryansh Shakya",
     author_email="suryanshsinghshakya1@gmail.com",
     description="Implementation of K-means algorithm from scratch with adaptive distance metrics",

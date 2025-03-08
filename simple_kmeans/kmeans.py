@@ -29,8 +29,11 @@ class KMeans:
             # Euclidean Distance
             distances = np.linalg.norm(X[:, np.newaxis] - centroids, axis=2)
         else:
-            # Minkowski Distance with p=3
-            distances = np.sum(np.abs(X[:, np.newaxis] - centroids) ** 3, axis=2) ** (1/3)
+            # Cosine Distance
+            X_norm = np.linalg.norm(X, axis=1, keepdims=True)
+            centroids_norm = np.linalg.norm(centroids, axis=1, keepdims=True)
+            cosine_similarity = np.dot(X, centroids.T) / (X_norm * centroids_norm.T)
+            distances = 1 - cosine_similarity
         
         return distances
 
