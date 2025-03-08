@@ -33,7 +33,7 @@ pip install simple-kmeans
 Here’s an example of how to use the custom K-Means implementation:
 
 ```python
-from kmeans_custom import KMeansCustom
+from simple_kmeans import KMeans
 import numpy as np
 import matplotlib.pyplot as plt
 
